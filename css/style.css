@@ -1,0 +1,630 @@
+@font-face {
+    font-family: 'KoPubDotumMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/KoPubDotumMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.mobile{
+    display: none;
+}
+body {
+    font-family: 'KoPubDotumMedium';
+}
+
+header {
+    border-bottom: 1px solid grey;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+}
+header>.innerBox {
+    display: flex;
+}
+
+.innerBox {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+.rightGnb {
+    padding-top: 20px;
+    position: absolute;
+    right: 60px;
+    display: flex;
+    line-height: 1.7;
+}
+
+.rightGnb img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+.gnbSublang,
+.gnbSublogin {
+    text-align: center;
+    display: none;
+}
+
+.gnbSublogin {
+    margin-right: -15px;
+}
+
+.rightGnb .gnbSublang {
+    display: none;
+}
+
+.langImg:hover .gnbSublang {
+    display: block;
+}
+
+.logImg:hover .gnbSublogin {
+    display: block;
+}
+.rightGnb li {
+    margin-right: 5px;
+
+}
+
+#nav {
+    display: flex;
+    text-align: center;
+    margin-left: 50px;
+    padding-top: 20px;
+}
+#nav>li {
+    position: relative;
+    margin-left: 25px;
+    font-weight: 700;
+    font-style: italic;
+}
+.rightGnb img {
+    height: 50px;
+}
+#nav>li>a {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    display: block;
+    padding: 20px 20px 10px 10px;
+    margin-left: 20px;
+}
+
+.sub1,
+.sub2 {
+    position: absolute;
+    line-height: 2;
+    overflow: hidden;
+    z-index: 100;
+    padding: 0 0 0px 45px;
+    display: none;
+}
+.aboutUs:hover .sub1 {
+    display: block;
+}
+.Community:hover .sub2 {
+    display: block;
+}
+.mainlogo {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+#mainBanner {
+    width: 100%;
+    overflow: hidden;
+}
+#mainBanner img {
+    max-width: 1300px;
+    display: block;
+    margin: 0 auto;
+}
+
+#container {
+    padding-top: 100px;
+}
+#container .innerBox>div {
+    float: left;
+    text-align: center;
+    border: 1px solid grey;
+    box-sizing: border-box;
+    width: 50%;
+    height: 450px;
+    position: relative;
+}
+#container .innerBox>div ul img {
+    width: 70%;
+}
+.derbyImgbox .Derby>li {
+    position: absolute;
+    width: 90%;
+    margin-left: 20px;
+}
+.derbyCircle {
+    letter-spacing: 30px;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    position: absolute;
+    text-indent: -9999px;
+}
+
+.derbyCircle>li:nth-child(1) {
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.derbyCircle>li:nth-child(2) {
+    background-color: antiquewhite;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top: 0.2px;
+    margin-left: 13px;
+}
+.derbyCircle>li:nth-child(3) {
+    background-color: grey;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 13px;
+}
+.derbyCircle>li:nth-child(4) {
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 5%;
+    margin-left: 13px;
+}
+.derbyTxtbox {
+    background-color: #cfbeae;
+}
+.dbImg {
+    margin-top: 10px;
+}
+.dbImg>img {
+    width: 40%;
+    opacity: 60%;
+}
+.hd {
+    margin-top: 45px;
+    font-weight: 600;
+}
+.dbview {
+    border: 1px solid black;
+    background: white;
+    display: block;
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.derbyTxtbox .dbview {
+    margin-left: 35%;
+}
+.dbb {
+    font-size: 15px;
+    font-weight: 600;
+    color: dimgray;
+}
+.bootsTxtbox {
+    text-align: center;
+    background-color: grey;
+    position: relative;
+}
+.bImg {
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+.bImg>img {
+    width: 30%;
+    opacity: 60%;
+}
+.hb {
+    margin-top: 45px;
+    font-weight: 600;
+}
+.hbb {
+    font-size: 15px;
+    font-weight: 600;
+}
+.bootsTxtbox .dbview {
+    margin-left: 35%;
+}
+.Boots img {
+    width: 120%;
+    margin-left: 40px;
+}
+.bootsImgbox>.Boots>li {
+    position: absolute;
+}
+.bootsCircle {
+    letter-spacing: 30px;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    position: absolute;
+    text-indent: -9999px;
+}
+.bootsCircle>li:nth-child(1) {
+    background-color: white;
+    border: 1px solid black;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+}
+.bootsCircle>li:nth-child(2) {
+    border: 1px solid red;
+    background-color: red;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-top: 0.2px;
+    margin-left: 13px;
+}
+.bootsCircle>li:nth-child(3) {
+    background-color: green;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 13px;
+}
+.bootsCircle>li:nth-child(4) {
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 13px;
+}
+.sneakersImgbox>.Sneakers>li {
+    position: absolute;
+}
+.sneakersTxtbox {
+    background-color: lightgray;
+}
+.sneakersTxtbox img {
+    width: 30%;
+    opacity: 60%;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+.snkr {
+    margin-top: 40px;
+    font-weight: 600;
+}
+.Sneakers img {
+    margin-left: 50px;
+}
+.sb {
+    font-size: 15px;
+    font-weight: 600;
+}
+.sneakersTxtbox .dbview {
+    margin-left: 35%;
+}
+.SneakersCircle {
+    letter-spacing: 30px;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    position: absolute;
+    text-indent: -9999px;
+}
+.SneakersCircle>li:nth-child(1) {
+    background-color: mediumvioletred;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.SneakersCircle>li:nth-child(2) {
+    border: 1px solid blue;
+    background-color: blue;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-top: 0.2px;
+    margin-left: 13px;
+}
+.SneakersCircle>li:nth-child(3) {
+    background-color: green;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 13px;
+}
+.SneakersCircle>li:nth-child(4) {
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 13px;
+}
+.collectionWrap {
+    background-color: black;
+    display: block;
+    position: relative;
+    top: 100px;
+}
+.HMESC .bigTitle {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 30px;
+    color: white;
+}
+.txtBox {
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    /* padding-top: 20px; */
+}
+.txtBox .hContent {
+    margin-top: 40px;
+    line-height: 1.5;
+}
+.videoWrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.videoBox {
+    width: 30%;
+    overflow: hidden;
+    margin-top: 50px;
+   left:50%;
+   transform: translateX(50%);
+}
+.videoBox video {
+    width: 200%;
+    transform: translateX(-25%);
+    height: 100%;
+}
+.txtBox {
+    margin-top: 50px;
+    width: 30%;
+    right: 50%;
+    transform: translateX(-70%);
+}
+.txtBox .HMESCcolor>img {
+    width: 80%;
+    margin-top: 20px;
+}
+.guide img {
+    width: 100%;
+}
+.guide {
+    background-color: #203025;
+}
+.guide>.innerBox {
+    display: block;
+    margin-top: 100px;
+}
+footer {
+    background-color: black;
+    color: white;
+}
+.footerWrap {
+    width: 100%;
+    background-color: white;
+    padding: 10px 0;
+}
+.footMenu {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: white;
+    width: 50%;
+    margin: 0 auto;
+}
+address {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-top: 20px;
+    font-weight: 300;
+}
+address>div {
+    margin: 0 20px;
+}
+.call {
+    font-size: 17px;
+    font-weight: 600;
+}
+.sns {
+    display: flex;
+}
+.hamBtn img {
+    position: absolute;
+    display: none;
+}
+.none{
+    display: none;
+}
+.bg{
+    display:none;
+}
+.minignbsublang{
+    display: none;
+}
+@media screen and (max-width:1300px) {
+    #container .innerBox>div {
+        height: 40vw;
+    }
+}
+@media screen and (max-width:768px) {
+    .minignbsublang{
+        display: flex;
+        font-size: 14px;
+        font-style: italic;
+        text-decoration: underline;
+        position: absolute;
+        top: 30px;
+    }
+    .minignbsublang>li{
+        padding: 10px;
+    }
+    .bg{
+        background-color: #ccc;
+        position:fixed;
+        width:100%;
+        height:100%;
+        opacity: 0.5;
+        z-index: 9;
+    }
+    .none{
+        display: block;
+        font-size: 16px;
+        font-weight: 500;
+        margin-left: 20px;
+        letter-spacing: 0.6px;
+        flex-direction: column;
+        padding-top:380px ;
+    }
+    .none>li{
+        margin: 30px 0;
+    }
+    .mainlogo {
+        text-align: center;
+    }
+    .pc{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .mobile img{
+        width: 100%;
+    }
+    #nav {
+        flex-direction: column;
+        position: fixed;
+        right: -100%;
+        background-color: white;      
+        width: 25%;
+        height: 100%;
+        z-index: 10;
+        border-left:1px solid #cfbeae;
+        border-top:1px solid #cfbeae;
+    }
+    #nav>li {
+        margin: 0 auto;
+        top: 70px;
+    }
+    #nav .sub1 {
+        display: none;
+    }
+    #nav .sub2 {
+        display: none;
+    }
+    .rightGnb {
+        display: none;
+    }
+    .derbyImgbox,
+    .sneakersImgbox,
+    .bootsImgbox {
+        height: 200px;
+    }
+    #container .innerBox>div {
+        height: 50vw;
+        text-align: center;
+    }
+    .derbyTxtbox {
+        width: 100%;
+        text-align: center;
+    }
+    .hamBtn img {
+        display: block;
+        position: absolute;
+        top: 32px;
+        right: 5%;
+        width: 40px;
+        height: 35px;
+    }
+    .hd,
+    .derbyTitle,
+    .dbImg,
+    .dbb,
+    .hb,
+    .hbb,
+    .bImg {
+        width: 80%;
+        margin-left: 30px;
+        margin-top: 15px;
+    }
+    .HMESCcolor img {
+        display: none;
+    }
+    .txtBox {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .bigTitle {
+        margin-top: 30px;
+        font-size: 25px;
+    }
+    .videoBox {
+        padding-top: 50px;
+        margin: 0 auto;
+        width: 70%;
+        order: 2;
+    }
+    .guide img {
+        width: 100%;
+        height: 300px;
+    }
+    .derbyCircle,
+    .SneakersCircle,
+    .bootsCircle,
+    .dbview {
+        display: none;
+    }
+    address{
+        display: block;
+    }
+}
+@media screen and (max-width:480px){
+    #container .innerBox>div{
+        width: 100%;
+        height: 75vw;
+    }
+    .minignbsublang:nth-child(1),
+    .minignbsublang:nth-child(2){
+        flex-wrap: wrap;
+    }
+    .minignbsublang>li{
+        margin: 0 auto;
+    }
+    .derbyImgbox,
+    .bootsImgbox,
+    .sneakersImgbox {
+        display: none;
+    }
+    #nav>li{
+       top:15%
+    }
+    .footMenu{
+        gap: 40px;
+    }
+    .HMESC>.bigTitle{
+        font-size: 20px;
+    }
+    .txtBox{
+        margin: 0 auto;
+        margin-top: 50px;
+        transform: translateX(0%);
+    }
+    .videoBox{
+        display: none;
+    }
+    .HMESCcolor img{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+}
